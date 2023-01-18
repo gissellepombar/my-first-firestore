@@ -41,7 +41,6 @@ db.collection('foods').get()
     .then (collection => { 
         const foods = collection.docs.map(doc => {
         let food = doc.data();
-        food.id = doc.data();
         food.id = doc.id;
         return food;
         //return
